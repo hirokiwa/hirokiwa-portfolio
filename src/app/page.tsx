@@ -1,8 +1,8 @@
-const Home = () =>  {
+const Top = () =>  {
   return (
     <main>
     </main>
   );
 }
 
-export  default Home;
+export  default Top;
