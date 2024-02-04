@@ -62,11 +62,47 @@ const WhoIAm = React.memo(() => {
   );
 });
 
+const WhatIDo = React.memo(() => {
+  return (
+    <div className="px-48 pb-48">
+      <div className="flex justify-center items-center">
+        <div className="w-1/2 flex justify-center">
+          <div>
+            <h2 className="text-3xl font-bold">What I do</h2>
+            <div className="mt-10 mb-5">
+              <p className="text-sm">大学で電子情報工学を学びながら</p>
+              <p className="text-sm">趣味でwebエンジニアリング。</p>
+              <p className="text-sm">アプリ開発やbotのお世話など。</p>
+              <p className="text-sm">面白そうな技術はとりあえず触ってみる。</p>
+            </div>
+          </div>
+        </div>
+        <div className="relative w-1/2 flex justify-center">
+          <div>
+            <Image
+              src={
+                "https://github.com/hirokiwa/hirokiwa-portfolio/assets/89170014/c1c227e3-f297-462f-9217-0094fb3ff100"
+              }
+              alt={"エンジニアリングのイメージ"}
+              width={0}
+              height={0}
+              sizes="30vw"
+              className="w-[20vw] rounded-lg bg-slate-100 aspect-[16464/24690]"
+            />
+            <p className="text-xs">※画像はイメージです。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+});
+
 const Home = React.memo(() => {
   return (
     <>
       <HomeTop />
       <WhoIAm />
+      <WhatIDo />
     </>
   );
 });
