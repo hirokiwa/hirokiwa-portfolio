@@ -12,7 +12,7 @@ const HomeTop = React.memo(() => {
         width={0}
         height={0}
         sizes="100vh"
-        className="w-full h-screen object-cover"
+        className="w-full h-screen object-cover bg-slate-100"
       />
       <div className="absolute top-0 left-0 m-5">
         <p>hirokiwa.com</p>
